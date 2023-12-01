@@ -148,7 +148,7 @@ export function useSnapshotProposal(proposalId: string) {
         await snapshotClient.vote(signer as unknown as ethers.providers.Web3Provider, address, {
           space: proposal?.space.id,
           proposal: proposalId,
-          type: 'weighted',
+          type: 'approval',
           choice,
         });
         queryClient.invalidateQueries(['proposal', proposalId, address]);

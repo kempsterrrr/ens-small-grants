@@ -153,7 +153,7 @@ const content: Content[] = [
       {
         question: 'What is a Voter Card?',
         answer:
-          'The voter card system employs an NFT ‘card’, where 1 Card = 1 Vote. Cardholders may cast their vote for a single proposal, or split their vote on multiple proposals. [ensgrants.xyz](https://ensgrants.xyz/) supports equally distributed votes, while [snapshot.org](https://snapshot.org/#/small-grants.eth) allows for weighted voting.',
+          'The voter card system employs an NFT ‘card’, where 1 Card = 1 Vote. Cardholders may vote for one or many proposals on [ensgrants.xyz](https://ensgrants.xyz/) or [snapshot.org](https://snapshot.org/#/small-grants.eth).',
       },
       {
         question: 'Who was eligible for voter cards?',
