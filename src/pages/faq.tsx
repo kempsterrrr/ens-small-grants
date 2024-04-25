@@ -129,7 +129,7 @@ const content: Content[] = [
       {
         question: 'Understanding the Voting Process',
         answer:
-          'In Rounds 1 through 9, voters participated using ENS Governance Tokens where 1 $ENS token = 1 vote. In Round 10, voting was following a Voter Card system. The $ENS governance token voting process has resumed for Round 12.',
+          'In Rounds 1 through 9, voters participated using ENS Governance Tokens where 1 $ENS token = 1 vote. In Round 10 and 11, voting was following a Voter Card system. See more in the Voter Card section below. In Round 12, we are getting back to ENS Governance Tokens voting, where 1 $ENS token = 1 vote',
       },
       {
         question: 'Are proposals submitted onchain?',
