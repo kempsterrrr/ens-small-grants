@@ -134,7 +134,13 @@ function VoteInProgressSection({ round, snapshotProposalId, proposal }: VoteInPr
   }
 
   if (!snapshotProposal || !snapshotGrant) {
-    return <Typography>Voting has not started yet</Typography>;
+    // Temporary patch for round 37, link to Snapshot
+    return (
+      <Button as="a" href={`https://snapshot.org/#/${round.snapshotSpaceId}/proposal/${round.snapshotProposalId}`}>
+        Vote on Snapshot
+      </Button>
+    );
+    // return <Typography>Voting has not started yet</Typography>;
   }
 
   const preVoting = new Date() < new Date(round.votingStart);

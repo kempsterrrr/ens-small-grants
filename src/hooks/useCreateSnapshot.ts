@@ -75,7 +75,7 @@ export function useCreateSnapshot() {
             address || '',
             {
               space: round.snapshotSpaceId,
-              type: 'weighted',
+              type: 'approval',
               title: round.title,
               body: `https://arweave.net/${transaction.id}`,
               choices: grantsOrdered.map(g => `${g.id} - ${g.title}`),

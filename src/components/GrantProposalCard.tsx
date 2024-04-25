@@ -269,7 +269,7 @@ function GrantProposalCard({
               votes
             </>
           )}
-          {inProgress && address && (
+          {/* {inProgress && address && (
             <div>
               <Checkbox
                 label=""
@@ -298,7 +298,7 @@ function GrantProposalCard({
                 }}
               />
             </div>
-          )}
+          )} */}
         </Votes>
       )}
     </>
