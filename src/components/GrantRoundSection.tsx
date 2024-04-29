@@ -98,9 +98,9 @@ function GrantRoundSection({ round, createProposalHref }: GrantRoundSectionProps
     getItem(`round-${round.id}-votes`, 'local')
       ? JSON.parse(getItem(`round-${round.id}-votes`, 'local'))
       : {
-          round: round.id,
-          votes: [],
-        }
+        round: round.id,
+        votes: [],
+      }
   );
 
   const [votingModalOpen, setVotingModalOpen] = useState<boolean>(false);
@@ -155,14 +155,7 @@ function GrantRoundSection({ round, createProposalHref }: GrantRoundSectionProps
         </Button>
       )}
 
-      {/*  Temporary patch for round 37, link to Snapshot */}
-      {randomiseGrants && (
-        <Button as="a" href={`https://snapshot.org/#/${round.snapshotSpaceId}/proposal/${round.snapshotProposalId}`}>
-          Vote on Snapshot
-        </Button>
-      )}
-
-      {/* {!address && randomiseGrants && (
+      {!address && randomiseGrants && (
         <Button variant="secondary" onClick={openConnectModal}>
           Connect wallet to vote
         </Button>
@@ -176,7 +169,7 @@ function GrantRoundSection({ round, createProposalHref }: GrantRoundSectionProps
         <Button onClick={() => setVotingModalOpen(true)}>
           Vote for {selectedProps.votes.length} proposal{selectedProps.votes.length > 1 && 's'}
         </Button>
-      )} */}
+      )}
 
       <ProposalWrapper scholarship={round.scholarship || false}>
         {grants &&
@@ -200,8 +193,8 @@ function GrantRoundSection({ round, createProposalHref }: GrantRoundSectionProps
                 randomiseGrants
                   ? selectedProps && selectedProps.votes.includes(g.snapshot?.choiceId || 0)
                   : new Date(round.votingStart) < new Date()
-                  ? grants.findIndex(grant => grant.id === g.id) < round.maxWinnerCount
-                  : false
+                    ? grants.findIndex(grant => grant.id === g.id) < round.maxWinnerCount
+                    : false
               }
             />
           ))}
