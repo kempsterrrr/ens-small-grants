@@ -155,13 +155,6 @@ function GrantRoundSection({ round, createProposalHref }: GrantRoundSectionProps
         </Button>
       )}
 
-      {/*  Temporary patch for round 37, link to Snapshot */}
-      {/* {randomiseGrants && (
-        <Button as="a" href={`https://snapshot.org/#/${round.snapshotSpaceId}/proposal/${round.snapshotProposalId}`}>
-          Vote on Snapshot
-        </Button>
-      )} */}
-
       {!address && randomiseGrants && (
         <Button variant="secondary" onClick={openConnectModal}>
           Connect wallet to vote
