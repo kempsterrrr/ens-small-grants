@@ -116,8 +116,12 @@ export function useSnapshotProposal(proposalId: string) {
         voteSamples: body.data.votes
           // Only show the voters who voted for this grant
           .filter(vote => {
-            // the keys are the choiceIds which are always numbers, but javascript's Object.keys always returns string so we need to cast it
-            const voterChoices = Object.keys(vote.choice).map(choice => Number(choice));
+            // // the keys are the choiceIds which are always numbers, but javascript's Object.keys always returns string so we need to cast it
+            // const voterChoices = Object.keys(vote.choice).map(choice => Number(choice));
+
+            // For ens voting power method, the vote.choice is an array of numbers (this can change depending on the voting method)
+            const voterChoices = vote.choice as number[];
+
             return voterChoices.includes(i + 1);
           })
           .sort((a, b) => {
