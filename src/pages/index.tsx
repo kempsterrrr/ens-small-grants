@@ -95,6 +95,13 @@ export default function Home() {
                 {activeRounds.length > 0 && <DesktopHiddenAnchor href="/rounds">See all rounds</DesktopHiddenAnchor>}
               </SectionHeading>
             </RoundItemsOuter>
+            <p>
+              This project is a fork of{' '}
+              <a href="https://ensgrants.xyz/" target="_blank" style={{ color: 'purple' }}>
+                ENS Small Grants
+              </a>{' '}
+              🤝
+            </p>
           </>
         );
       })()}
