@@ -29,7 +29,14 @@ const OpenGraphElements: React.FC<{
       {/* <!-- Open Graph / Facebook --> */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={imageUrl} />
+      <meta
+        property="og:image"
+        content={
+          process.env['NEXT_PUBLIC_VERCEL_URL'] !== undefined
+            ? `https://${process.env['NEXT_PUBLIC_VERCEL_URL']}`
+            : `/developer-dao-small-grants-meta-image.png`
+        }
+      />
 
       {/* <!-- Twitter --> */}
       <meta name="twitter:title" content={title} />
