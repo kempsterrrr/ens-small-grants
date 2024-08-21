@@ -33,7 +33,7 @@ const OpenGraphElements: React.FC<{
         property="og:image"
         content={
           process.env['NEXT_PUBLIC_VERCEL_URL'] !== undefined
-            ? `https://${process.env['NEXT_PUBLIC_VERCEL_URL']}`
+            ? `https://${process.env['NEXT_PUBLIC_VERCEL_URL']}/developer-dao-small-grants-meta-image.png`
             : `/developer-dao-small-grants-meta-image.png`
         }
       />
