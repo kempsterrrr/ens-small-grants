@@ -37,16 +37,16 @@ export default function Home() {
 
       {(() => {
         if (!rounds || !activeRounds) {
-          return <Spinner size="large" color="purple" />;
+          return <Spinner size="large" color="black" />;
         }
 
         return (
           <>
             <HeadingContainer>
-              <Heading>ENS Small Grants</Heading>
+              <Heading>Developer DAO Small Grants</Heading>
               <Subheading>
-                ENS Small Grants allow the community to vote on projects to receive funding, sponsored by the Public
-                Goods and Ecosystem Working Groups.
+                Developer DAO Small Grants allow the community to vote on projects to receive funding, funded by our
+                friends in the ecosystem and the DAO.
               </Subheading>
             </HeadingContainer>
 

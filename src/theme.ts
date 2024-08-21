@@ -10,7 +10,7 @@ declare module 'styled-components' {
 
 export const rainbowKitTheme: Theme = {
   ...lightTheme({
-    accentColor: thorinLightTheme.colors.purple,
+    accentColor: thorinLightTheme.colors.black,
     borderRadius: 'medium',
   }),
   fonts: {
@@ -22,9 +22,9 @@ export const thorinTheme: ThorinDefaultTheme = {
   ...thorinLightTheme,
   colors: {
     ...thorinLightTheme.colors,
-    accent: thorinLightTheme.colors.purple,
-    accentSecondary: `rgba(${thorinLightTheme.accentsRaw.purple}, ${thorinLightTheme.shades.accentSecondary})`,
-    accentSecondaryHover: `rgba(${thorinLightTheme.accentsRaw.purple}, ${thorinLightTheme.shades.accentSecondary})`,
-    accentTertiary: `rgba(${thorinLightTheme.accentsRaw.purple}, calc(${thorinLightTheme.shades.accentSecondary} * 0.5))`,
+    accent: thorinLightTheme.colors.black,
+    accentSecondary: `rgba(${thorinLightTheme.accentsRaw.black}, ${thorinLightTheme.shades.accentSecondary})`,
+    accentSecondaryHover: `rgba(${thorinLightTheme.accentsRaw.black}, ${thorinLightTheme.shades.accentSecondary})`,
+    accentTertiary: `rgba(${thorinLightTheme.accentsRaw.black}, calc(${thorinLightTheme.shades.accentSecondary} * 0.5))`,
   },
 };

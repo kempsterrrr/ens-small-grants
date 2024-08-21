@@ -16,7 +16,7 @@ const BackButtonContainer = styled.div(
     justify-content: flex-start;
     gap: ${theme.space['2']};
 
-    color: ${theme.colors.purple};
+    color: ${theme.colors.black};
     font-size: ${theme.fontSizes.extraLarge};
 
     svg {

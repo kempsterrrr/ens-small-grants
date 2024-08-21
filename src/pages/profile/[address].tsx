@@ -101,7 +101,7 @@ export default function Profile() {
   const twitterHandle = twitter?.includes('twitter.com/') ? twitter.split('twitter.com/')[1] : twitter;
   const displayName = ensName || shortenAddress(address);
 
-  const loadingContent = <Spinner size="large" color="purple" />;
+  const loadingContent = <Spinner size="large" color="black" />;
 
   const loadedContent = (
     <>

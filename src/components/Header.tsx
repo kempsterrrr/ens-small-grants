@@ -38,8 +38,9 @@ const FullLogoIconWrapper = styled.div(
 const ShortLogoIconWrapper = styled.div(
   ({ theme }) => css`
     width: ${theme.space['16']};
-    ${mq.md.min(css`
-      display: none;
+    // ${mq.md.min(css`
+      //   display: none;
+      //
     `)}
   `
 );
@@ -101,15 +102,13 @@ const Header = () => {
   return (
     <HeaderContainer>
       <LogoAndText href="/">
-        <FullLogoIconWrapper>
+        {/* <FullLogoIconWrapper>
           <Logo />
-        </FullLogoIconWrapper>
+        </FullLogoIconWrapper> */}
         <ShortLogoIconWrapper>
           <ShortLogo />
         </ShortLogoIconWrapper>
-        <Title>
-          <i>Small</i> Grants
-        </Title>
+        <Title>{/* <i>Small</i> Grants */}</Title>
       </LogoAndText>
       <NavButtons>
         <Link href="/faq">FAQ</Link>
