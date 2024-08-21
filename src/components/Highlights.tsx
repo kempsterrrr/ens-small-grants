@@ -19,7 +19,7 @@ const HighlightsContainer = styled.div(
 export function Highlights() {
   return (
     <HighlightsContainer>
-      <Stat number="5K" label="USDC funded" />
+      <Stat number="5K" label="USD funded" />
       <Stat number="👀" label="Proposals" />
       <Stat number="👀" label="Voters" />
     </HighlightsContainer>
