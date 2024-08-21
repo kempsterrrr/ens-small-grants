@@ -2,7 +2,8 @@ import { lightTheme as thorinLightTheme, DefaultTheme as ThorinDefaultTheme } fr
 import { lightTheme, Theme } from '@rainbow-me/rainbowkit';
 import 'styled-components';
 
-type ExtendedTheme = typeof thorinLightTheme;
+// Update the type definition to include the 'black' property in the colors object
+type ExtendedTheme = typeof thorinLightTheme & { colors: { black: string } };
 
 declare module 'styled-components' {
   export interface DefaultTheme extends ExtendedTheme {}
@@ -23,8 +24,8 @@ export const thorinTheme: ThorinDefaultTheme = {
   colors: {
     ...thorinLightTheme.colors,
     accent: thorinLightTheme.colors.black,
-    accentSecondary: `rgba(${thorinLightTheme.accentsRaw.black}, ${thorinLightTheme.shades.accentSecondary})`,
-    accentSecondaryHover: `rgba(${thorinLightTheme.accentsRaw.black}, ${thorinLightTheme.shades.accentSecondary})`,
-    accentTertiary: `rgba(${thorinLightTheme.accentsRaw.black}, calc(${thorinLightTheme.shades.accentSecondary} * 0.5))`,
+    accentSecondary: `rgba(${thorinLightTheme.colors.black}, ${thorinLightTheme.shades.accentSecondary})`,
+    accentSecondaryHover: `rgba(${thorinLightTheme.colors.black}, ${thorinLightTheme.shades.accentSecondary})`,
+    accentTertiary: `rgba(${thorinLightTheme.colors.black}, calc(${thorinLightTheme.shades.accentSecondary} * 0.5))`,
   },
 };
