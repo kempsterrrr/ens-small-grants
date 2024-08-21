@@ -202,7 +202,7 @@ const content: Content[] = [
 export default function Faq() {
   return (
     <>
-      <OpenGraphElements title="Frequently Asked Questions - ENS Small Grants" />
+      <OpenGraphElements title="Frequently Asked Questions - Developer DAO Small Grants" />
 
       <PageTitle level="2">Frequent Asked Questions</PageTitle>
 

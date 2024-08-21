@@ -14,7 +14,7 @@ export const chains = [mainnet, optimism];
 const { publicClient, webSocketPublicClient } = configureChains(chains, [publicProvider()]);
 
 export const { connectors } = getDefaultWallets({
-  appName: 'ENS Small Grants',
+  appName: 'Developer DAO Small Grants',
   projectId: WALLETCONNECT_ID,
   chains: [mainnet],
 });

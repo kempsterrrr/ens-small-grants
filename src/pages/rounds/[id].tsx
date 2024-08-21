@@ -138,7 +138,7 @@ export default function Round({ staticRound }: { staticRound: Round }) {
 
   return (
     <>
-      <OpenGraphElements title={`${staticRound.title || ''} | ENS Small Grants`} />
+      <OpenGraphElements title={`${staticRound.title || ''} | Developer DAO Small Grants`} />
 
       <RoundContent round={staticRound} showHelper={showHelper} />
     </>

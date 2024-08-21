@@ -8,15 +8,15 @@ const OpenGraphElements: React.FC<{
   let { title, description, imageUrl } = props;
 
   if (!title) {
-    title = 'ENS Small Grants';
+    title = 'Developer DAO Small Grants';
   }
 
   if (!description) {
-    description = 'Vote on projects to receive funding from ENS DAO Working Groups.';
+    description = 'Vote on projects to receive funding from Developer DAO and friends.';
   }
 
   if (!imageUrl) {
-    imageUrl = 'https://ensgrants.xyz/sharing.jpg';
+    imageUrl = '/public/developer-dao-small-grants-meta-image.png';
   }
 
   return (

@@ -143,7 +143,7 @@ export default function Profile() {
 
   return (
     <>
-      <OpenGraphElements title={`${displayName} - ENS Small Grants`} />
+      <OpenGraphElements title={`${displayName} - Developer DAO Small Grants`} />
       {!address ? loadingContent : loadedContent}
       {}
     </>

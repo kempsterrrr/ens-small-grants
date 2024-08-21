@@ -42,7 +42,7 @@ export default function Rounds() {
 
   return (
     <>
-      <OpenGraphElements title={`All Rounds - ENS Small Grants`} />
+      <OpenGraphElements title={`All Rounds - Developer DAO Smal Grants`} />
 
       {(() => {
         if (!rounds) {
