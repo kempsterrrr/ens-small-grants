@@ -165,7 +165,7 @@ const content: Content[] = [
           'Yes, you may submit the same project again in subsequent rounds, but not two rounds happening at the same time.',
       },
       {
-        question: 'My submission was removed or relocated to a different Working Group Round.',
+        question: 'My submission was removed.',
         answer:
           'Submissions may be removed if they do not fit eligibility. If you have concerns reach out to [kempsterrr.eth](https://x.com/kempsterrrr).',
       },
@@ -174,11 +174,11 @@ const content: Content[] = [
   {
     title: 'Find Out More',
     content: [
-      {
-        question: 'Where else can I participate?',
-        answer:
-          'Learn more about the Working Groups by visiting [basics.ensdao.org/working-groups](https://basics.ensdao.org/working-groups), and the ENS DAO Forum at [discuss.ens.domains](https://discuss.ens.domains/).',
-      },
+      // {
+      //   question: 'Where else can I participate?',
+      //   answer:
+      //     'Learn more about the Working Groups by visiting [basics.ensdao.org/working-groups](https://basics.ensdao.org/working-groups), and the ENS DAO Forum at [discuss.ens.domains](https://discuss.ens.domains/).',
+      // },
       {
         question: 'Is this website open source?',
         answer:
@@ -192,8 +192,7 @@ const content: Content[] = [
     content: [
       {
         question: 'I’m having an issue. Who do I contact?',
-        answer:
-          'Please get in touch with [gregskril.eth](https://twitter.com/gregskril) or any [Working Group steward](https://basics.ensdao.org/working-groups#ca018f3e6c944825b0e58985d060e29c).',
+        answer: 'Please get in touch with [kempsterrrr.eth](https://t.me/kempsterrrr)',
       },
     ],
   },

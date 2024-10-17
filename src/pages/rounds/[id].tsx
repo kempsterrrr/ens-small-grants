@@ -205,7 +205,7 @@ const RoundContent = ({ round, showHelper }: { round: Round; showHelper: boolean
 
         <HeadingContainer>
           <Title>
-            <b>{round.title.split('Round')[0]}</b> {!round.scholarship && `Round ${round.title.split('Round')[1]}`}
+            <b>{round.title.split('Round')[0]}</b> {!round.scholarship && `Small grants round`}
           </Title>
           <VoteDetailsContainer>
             <VotesTypography>{upperVoteMsg}</VotesTypography>

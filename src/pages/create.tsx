@@ -261,7 +261,7 @@ export default function CreateProposal() {
                     description={<InputDescription>The title of your proposal</InputDescription>}
                     validated={getFieldState('title', formState).isDirty}
                     required
-                    placeholder="ENS Spaceship"
+                    placeholder={round.title + ` Spaceship`}
                     {...register('title', {
                       required: true,
                       validate: value =>
@@ -275,7 +275,7 @@ export default function CreateProposal() {
                     id="shortDescription"
                     required
                     description={<InputDescription>Your project in 100 characters or less</InputDescription>}
-                    placeholder="Taking ENS users to Mars and back"
+                    placeholder={`Taking ${round.title} users to Mars and back`}
                     validated={getFieldState('shortDescription', formState).isDirty}
                     {...register('shortDescription', {
                       required: true,
@@ -288,10 +288,10 @@ export default function CreateProposal() {
                     label="Website"
                     showDot
                     id="twitter"
-                    description={<InputDescription>Your project’s website or Twitter profile</InputDescription>}
+                    description={<InputDescription>Your website or Twitter profile</InputDescription>}
                     validated={getFieldState('twitter', formState).isDirty}
                     required
-                    placeholder="https://ens.domains/"
+                    placeholder="https://developerdao.com/"
                     {...register('twitter', { required: true })}
                   />
                   <Input
@@ -304,7 +304,7 @@ export default function CreateProposal() {
                       </InputDescription>
                     }
                     validated={getFieldState('payoutAddress', formState).isDirty}
-                    placeholder="ens.eth"
+                    placeholder="ENS or Wallet Address"
                     {...register('payoutAddress', { required: false })}
                   />
                   <Textarea
@@ -312,7 +312,7 @@ export default function CreateProposal() {
                     id="fullText"
                     required
                     showDot
-                    placeholder={`## Why ENS needs a Spaceship\n\nWe need a spaceship to...`}
+                    placeholder={`## Why ${round.title} needs a Spaceship\n\nWe need a spaceship to...`}
                     description={
                       <InputDescription>
                         This should be a full description of what you are proposing, with a minimum of at least 300
